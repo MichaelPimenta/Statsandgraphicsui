@@ -37,7 +37,7 @@ stat_columns = [
 
 # Exclude negative values from numerical columns
 filtered_data_numeric = filtered_data[stat_columns]
-filtered_data[filtered_data_numeric.columns] = filtered_data_numeric[filtered_data_numeric >= 0]
+filtered_data[filtered_data_numeric.columns] = filtered_data_numeric.mask(filtered_data_numeric < 0)
 
 # Calculate descriptive statistics
 stats = filtered_data[stat_columns].describe()
