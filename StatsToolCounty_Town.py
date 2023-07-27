@@ -4,6 +4,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
+import requests
 
 # Load your data
 # data = pd.read_csv('D:\\CIRCA\\CTEJIndex_v1_4_2\\output.csv')
