@@ -7,7 +7,9 @@ import seaborn as sns
 
 # Load your data
 # data = pd.read_csv('D:\\CIRCA\\CTEJIndex_v1_4_2\\output.csv')
-data = 'output.csv'
+url = "https://raw.githubusercontent.com/MichaelPimenta/Statsandgraphicsui/main/output.csv"
+s = requests.get(url).content
+data = pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 # Select either town or county
 level = st.selectbox('Select level', ('TOWN_NAME', 'County'))
