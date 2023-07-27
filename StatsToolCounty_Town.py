@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load your data
-data = pd.read_csv('D:\\CIRCA\\CTEJIndex_v1_4_2\\output.csv')
+# data = pd.read_csv('D:\\CIRCA\\CTEJIndex_v1_4_2\\output.csv')
+file_path = 'output.csv'
 
 # Select either town or county
 level = st.selectbox('Select level', ('TOWN_NAME', 'County'))
