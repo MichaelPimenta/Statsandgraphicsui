@@ -5,7 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import requests
-
+import io
 # Load your data
 # data = pd.read_csv('D:\\CIRCA\\CTEJIndex_v1_4_2\\output.csv')
 url = "https://raw.githubusercontent.com/MichaelPimenta/Statsandgraphicsui/main/output.csv"
